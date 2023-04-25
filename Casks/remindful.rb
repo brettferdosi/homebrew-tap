@@ -1,6 +1,6 @@
 cask "remindful" do
   version "0.4"
-  sha256 "899fe64d9c4fe6483641136ed976f59e15220f3ac2b9283d2c1283decadd90e9"
+  sha256 "19058a8e20d89990a6f8a4b51f3be0ed35a7f99296590f109295b7e10a8f8e12"
 
   url "https://github.com/brettferdosi/remindful/releases/download/v#{version}/remindful.app.zip"
   appcast "https://github.com/brettferdosi/remindful/releases.atom"
