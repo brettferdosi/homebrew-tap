@@ -18,7 +18,9 @@ cask "rclone-cask" do
   name "rclone-cask"
   desc "rclone cask to work around lack of mount support in the formula version"
   homepage "https://rclone.org/"
-  appcast "https://github.com/rclone/rclone/releases.atom"
+  livecheck do
+    url "https://github.com/rclone/rclone/releases.atom"
+  end
 
   depends_on cask: "macfuse"
   conflicts_with formula: "rclone"
