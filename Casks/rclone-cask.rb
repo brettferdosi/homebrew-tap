@@ -1,14 +1,14 @@
 cask "rclone-cask" do
-  version "1.62.2" # update sha256 hashes with version
+  version "1.63.1" # update sha256 hashes with version
 
   if Hardware::CPU.intel?
-    sha256 "afef35513c7ce89e9ed9962e2c44c604587de1faa317d9fd3bf6590dc3be8658"
+    sha256 "e6d749a36fc5258973fff424ebf1728d5c41a4482ea4a2b69a7b99ec837297e7"
     binary "rclone-v#{version}-osx-amd64/rclone"
     manpage "rclone-v#{version}-osx-amd64/rclone.1"
     url "https://github.com/rclone/rclone/releases/download/v#{version}/rclone-v#{version}-osx-amd64.zip",
       verified: "github.com/rclone/rclone/"
   else
-    sha256 "efb17668ff5bc7cb632ddc85ad0d38b020bed85ca6a2b798a31a61abb32b0516"
+    sha256 "45d5b7799b90d8d6cc2d926d7920383a606842162e41303f5044058f5848892c"
     binary "rclone-v#{version}-osx-arm64/rclone"
     manpage "rclone-v#{version}-osx-arm64/rclone.1"
     url "https://github.com/rclone/rclone/releases/download/v#{version}/rclone-v#{version}-osx-arm64.zip",
